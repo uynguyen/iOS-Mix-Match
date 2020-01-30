@@ -15,6 +15,10 @@
 		38314DD423D98CB500F50336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38314DD223D98CB500F50336 /* LaunchScreen.storyboard */; };
 		38314DDF23D98CB500F50336 /* Mix_MatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38314DDE23D98CB500F50336 /* Mix_MatchTests.swift */; };
 		38314DEA23D98CB500F50336 /* Mix_MatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38314DE923D98CB500F50336 /* Mix_MatchUITests.swift */; };
+		38314DFB23D98D2400F50336 /* MyMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38314DF923D98D2400F50336 /* MyMath.cpp */; };
+		38314DFF23D9901E00F50336 /* ObjMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38314DFE23D9901E00F50336 /* ObjMath.mm */; };
+		38314E0223D9990400F50336 /* MyMathSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38314E0123D9990400F50336 /* MyMathSwift.swift */; };
+		38314E0523D99AA000F50336 /* aa.m in Sources */ = {isa = PBXBuildFile; fileRef = 38314E0423D99AA000F50336 /* aa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,14 @@
 		38314DE523D98CB500F50336 /* Mix-MatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mix-MatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38314DE923D98CB500F50336 /* Mix_MatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mix_MatchUITests.swift; sourceTree = "<group>"; };
 		38314DEB23D98CB500F50336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38314DF823D98D2400F50336 /* Mix-Match-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mix-Match-Bridging-Header.h"; sourceTree = "<group>"; };
+		38314DF923D98D2400F50336 /* MyMath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyMath.cpp; sourceTree = "<group>"; };
+		38314DFA23D98D2400F50336 /* MyMath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyMath.hpp; sourceTree = "<group>"; };
+		38314DFD23D9901E00F50336 /* ObjMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjMath.h; sourceTree = "<group>"; };
+		38314DFE23D9901E00F50336 /* ObjMath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjMath.mm; sourceTree = "<group>"; };
+		38314E0123D9990400F50336 /* MyMathSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMathSwift.swift; sourceTree = "<group>"; };
+		38314E0323D99AA000F50336 /* aa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aa.h; sourceTree = "<group>"; };
+		38314E0423D99AA000F50336 /* aa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,9 @@
 		38314DBB23D98CB400F50336 = {
 			isa = PBXGroup;
 			children = (
+				38314E0023D998F000F50336 /* SwiftLib */,
+				38314DFC23D98FEC00F50336 /* Obj-Brigde */,
+				38314DF723D98CDF00F50336 /* C++Lib */,
 				38314DC623D98CB400F50336 /* Mix-Match */,
 				38314DDD23D98CB500F50336 /* Mix-MatchTests */,
 				38314DE823D98CB500F50336 /* Mix-MatchUITests */,
@@ -126,6 +141,35 @@
 				38314DEB23D98CB500F50336 /* Info.plist */,
 			);
 			path = "Mix-MatchUITests";
+			sourceTree = "<group>";
+		};
+		38314DF723D98CDF00F50336 /* C++Lib */ = {
+			isa = PBXGroup;
+			children = (
+				38314DF923D98D2400F50336 /* MyMath.cpp */,
+				38314DFA23D98D2400F50336 /* MyMath.hpp */,
+				38314DF823D98D2400F50336 /* Mix-Match-Bridging-Header.h */,
+			);
+			path = "C++Lib";
+			sourceTree = "<group>";
+		};
+		38314DFC23D98FEC00F50336 /* Obj-Brigde */ = {
+			isa = PBXGroup;
+			children = (
+				38314DFD23D9901E00F50336 /* ObjMath.h */,
+				38314DFE23D9901E00F50336 /* ObjMath.mm */,
+				38314E0323D99AA000F50336 /* aa.h */,
+				38314E0423D99AA000F50336 /* aa.m */,
+			);
+			path = "Obj-Brigde";
+			sourceTree = "<group>";
+		};
+		38314E0023D998F000F50336 /* SwiftLib */ = {
+			isa = PBXGroup;
+			children = (
+				38314E0123D9990400F50336 /* MyMathSwift.swift */,
+			);
+			path = SwiftLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +240,7 @@
 				TargetAttributes = {
 					38314DC323D98CB400F50336 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					38314DD923D98CB500F50336 = {
 						CreatedOnToolsVersion = 11.3;
@@ -262,6 +307,10 @@
 				38314DCC23D98CB400F50336 /* ViewController.swift in Sources */,
 				38314DC823D98CB400F50336 /* AppDelegate.swift in Sources */,
 				38314DCA23D98CB400F50336 /* SceneDelegate.swift in Sources */,
+				38314E0223D9990400F50336 /* MyMathSwift.swift in Sources */,
+				38314E0523D99AA000F50336 /* aa.m in Sources */,
+				38314DFF23D9901E00F50336 /* ObjMath.mm in Sources */,
+				38314DFB23D98D2400F50336 /* MyMath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS57NS4CYB;
 				INFOPLIST_FILE = "Mix-Match/Info.plist";
@@ -443,6 +493,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Mix-Match";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "C++Lib/Mix-Match-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DS57NS4CYB;
 				INFOPLIST_FILE = "Mix-Match/Info.plist";
@@ -461,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Mix-Match";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "C++Lib/Mix-Match-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
